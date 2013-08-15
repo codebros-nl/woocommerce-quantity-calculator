@@ -29,7 +29,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 		$active = get_post_meta($post->ID,"_calculatorscript_active",true);
 		
 		// if the calculator exists, enable the form
-		if($active) {
+		if($active != 'no') {
 			
 			$calculatorValue = get_post_meta($post->ID,"_calculatorscript_value",true);
 			require_once 'template.php';
@@ -70,7 +70,6 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 		woocommerce_wp_checkbox( array(
 				'id' => '_calculatorscript_active', 
 				'label' => __( 'Enable Calculator', 'wqc' ), 
-				'cbvalue' => 'yes', 
 				'value' => esc_attr( $post->_calculatorscript_active )
 			)
 		);
