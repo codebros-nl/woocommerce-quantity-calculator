@@ -1,10 +1,11 @@
 <?php
 /* 	Plugin name:	WooCommerce Quantity Calculator
-**	Plugin URI:		http://www.normanreinhard.nl/plugins/woocommerce-quantity-calculator	
+**	Plugin URI:		http://www.normanreinhard.nl/plugins/woocommerce-quantity-calculator
+**	Description:	Enable visitors to calculate how much packs they need.
 **	Author:			Norman Reinhard
 **	Author URI:		http://www.normanreinhard.nl/
 **	Version:		1.0
-**	License:		GPL2
+**	License:		GPLv2
 **/
 
 define( 'WQC_PLUGIN_VERSION_NUMBER', '1.0' );
