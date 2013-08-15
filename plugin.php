@@ -29,7 +29,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 		$active = get_post_meta($post->ID,"_calculatorscript_active",true);
 		
 		// if the calculator exists, enable the form
-		if($active != 'no') {
+		if($active != 'no' && $active != NULL) {
 			
 			$calculatorValue = get_post_meta($post->ID,"_calculatorscript_value",true);
 			require_once 'template.php';
